@@ -7,21 +7,12 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy.orm import declarative_base, sessionmaker, selectinload, relationship
 
-from environs import Env
 
 logger = logging.getLogger(__name__)
 
-env = Env()
-env.read_env()
 
-db_driver = 'postgresql+asyncpg'
-db_user = env.str("DB_USER")
-db_password = env.str("PG_PASSWORD")
-db_host = env.str("DB_HOST")
-db_port = env.str("PORT")
-db_name = env.str("DB_NAME")
-
-db_string = f"{db_driver}://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}" # setting for connecting to database 
+db_string = postgres://postgres:Ibntaymya1.@db.ocsrfwsqoiuztsqyjbip.supabase.co:6543/postgres
+        
 
 Base = declarative_base()
 
