@@ -43,7 +43,7 @@ async def main():
     logger.info("Starting bot")
     print("[INFO] Starting Bot")
 
-    bot = Bot(token=config.tg_bot.token, parse_mode='HTML')
+    bot = Bot(token="6169974916:AAFO4oyy5fiYM19VrLiJ0lyc-MN9gCFVgd0", parse_mode='HTML')
     dp = Dispatcher(bot, storage=storage)
 
     bot['config'] = config
