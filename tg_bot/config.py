@@ -36,16 +36,16 @@ def load_config(path: str = None):
 
     return Config(
         tg_bot=TgBot(
-            token=env.str("BOT_TOKEN"),
-            admin_ids=list(map(int, env.list("ADMINS"))),
-            use_redis=env.bool("USE_REDIS"),
+            token="6169974916:AAFO4oyy5fiYM19VrLiJ0lyc-MN9gCFVgd0",
+            admin_ids=int(6234365091),
+            use_redis=False,
         ),
         db=DbConfig(
-            host=env.str('DB_HOST'),
-            password=env.str('PG_PASSWORD'),
-            user=env.str('DB_USER'),
-            database=env.str('DB_NAME'),
-            port=env.str('PORT')
+            host="db.ocsrfwsqoiuztsqyjbip.supabase.co",
+            password="Ibntaymya1.",
+            user="postgres",
+            database="postgres",
+            port=int(5432)
         ),
         # misc=Miscellaneous()
     )
