@@ -11,7 +11,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker, selectinload, relatio
 logger = logging.getLogger(__name__)
 
 
-db_string = postgres://postgres:Ibntaymya1.@db.ocsrfwsqoiuztsqyjbip.supabase.co:6543/postgres
+db_string = f"postgres://postgres:Ibntaymya1.@db.ocsrfwsqoiuztsqyjbip.supabase.co:6543/postgres"
         
 
 Base = declarative_base()
