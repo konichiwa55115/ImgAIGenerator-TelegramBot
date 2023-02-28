@@ -14,7 +14,7 @@ class DbConfig:
 @dataclass
 class TgBot:
     token: str
-    admin_ids: list[int]
+    admin_ids: int
     use_redis: True
 
 @dataclass
@@ -34,18 +34,4 @@ def load_config(path: str = None):
     env.read_env(path)
 
 
-    return Config(
-        tg_bot=TgBot(
-            token="6169974916:AAFO4oyy5fiYM19VrLiJ0lyc-MN9gCFVgd0",
-            admin_ids=int(6234365091),
-            use_redis=False,
-        ),
-        db=DbConfig(
-            host="db.ocsrfwsqoiuztsqyjbip.supabase.co",
-            password="Ibntaymya1.",
-            user="postgres",
-            database="postgres",
-            port=int(5432)
-        ),
-        # misc=Miscellaneous()
-    )
+  
