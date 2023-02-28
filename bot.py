@@ -17,7 +17,7 @@ from tg_bot.middlewares.environment import EnvironmentMiddleware
 logger = logging.getLogger(__name__)
 config = load_config(".env")
 
-storage = RedisStorage2() if config.tg_bot.use_redis else MemoryStorage() # Use Redis if in file .env USE_REDIS=True else use MemoryStorage
+storage =  MemoryStorage() # Use Redis if in file .env USE_REDIS=True else use MemoryStorage
 
 # def register_all_middlewares(dp, config):
 #     dp.setup_middleware(EnvironmentMiddleware(config=config)) 
