@@ -8,8 +8,7 @@ from environs import Env
 from PIL import Image
 
 def load_config(path: str = None):
-    env = Env()
-    env.read_env(path)
+   
 
     openai.api_key = "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"
 
