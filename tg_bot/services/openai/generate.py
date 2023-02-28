@@ -11,7 +11,7 @@ def load_config(path: str = None):
     env = Env()
     env.read_env(path)
 
-    openai.api_key = env.str("OPENAI_API_KEY")
+    openai.api_key = "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"
 
 load_config()
 
